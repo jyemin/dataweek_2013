@@ -1,5 +1,5 @@
 #!/bin/sh
-githome="/Users/sridhar/git/sridharn/codemash_2013"
+githome="/Users/sridhar/git/sridharn/dataweek_2013"
 datadirbase="$githome/sharding/data"
 datadir="$datadirbase/config"
 if [ ! -d "$datadir" ]; then
