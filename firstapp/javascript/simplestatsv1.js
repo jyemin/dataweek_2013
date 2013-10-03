@@ -3,8 +3,8 @@ user_2 = {
       name: "user2",
       twitter: "user2",
       checkins: [
-       {location: "Lotus Flower", ts: ISODate("2012-09-21T11:52:27.442Z")},
-       {location: "Taj Mahal", ts: ISODate("2011-09-22T07:15:00.442Z")}
+       {location: "Lotus Flower", ts: ISODate("2012-09-01T11:52:27.442Z")},
+       {location: "Taj Mahal",    ts: ISODate("2012-09-29T07:15:00.442Z")}
       ]
   }
 
@@ -21,4 +21,4 @@ user_3 = {
 
 db.users.save(user_3)
 
-db.users.find({"checkins.location":"Lotus Flower"}, {name:1, checkins:1}).sort({"checkins.ts": -1}).limit(10)
+db.users.find({"checkins.location":"Lotus Flower"}, {name:1, checkins:1}).sort({"checkins.ts": -1}).limit(10).pretty()
